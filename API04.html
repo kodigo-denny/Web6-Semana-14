@@ -9,7 +9,7 @@
     <script>
         async function cargar(){
             try{
-                let res = await axios("https://pokeapi.co/api/v2/pokemon/15")
+                let res = await axios("https://pokeapi.co/api/v2/pokemon/20")
                 let objeto = await res.data
 
                 console.log(objeto)
@@ -45,7 +45,7 @@
         async function editar(){
             try{
                 let objeto = {
-                    autorId: 101,
+                    autorId: 111,
                     nombre: "Denny Alexis",
                     apellido: "Herrera Marin",
                     paisOrigen: "El Salvador"
@@ -66,7 +66,7 @@
         async function eliminar(){
             try{
 
-                let res = await axios.delete("https://denny2023.azurewebsites.net/api/autores?id=101")
+                let res = await axios.delete("https://denny2023.azurewebsites.net/api/autores?id=111")
 
                 let o = await res.data
 
